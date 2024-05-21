@@ -7,6 +7,7 @@ import CardMusica from "../../components/cardMusica/CardMusica";
 
 const Musicas = () => {
     const [cardsData, setCardsData] = useState();
+    
     function recuperarValorDoCard() {
         api.get().then((response) => {
             const { data } = response;
